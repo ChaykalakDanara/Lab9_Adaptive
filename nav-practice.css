@@ -1,0 +1,38 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #062594;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    background-color: #59acff;
+    border-radius: 3px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #ff3b79;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .menu a {
+        padding: 10px 20px;
+    }
+}
